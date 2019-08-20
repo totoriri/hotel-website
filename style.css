@@ -1,0 +1,159 @@
+body{
+    margin:0px;
+    padding:0px;
+     
+}
+
+#back-page{
+    background: url(images/back.jpg) center fixed no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+.up-coming-image{
+    margin-left:500px;
+    margin-top:-170px;
+    animation-name: logo;
+    animation-timing-function: ease-out;
+    animation-duration:2s;
+　  
+}
+
+@keyframes logo{
+   0%{opacity: 0;transform:translateY(-200px);}
+　 25%{opacity:0.4;transform:translateY(0px);}
+   50%{opacity:0.6;transform:translateY(30px);}
+   100%{opacity:1.0;}
+}
+
+
+/*----------- center-area ----------------*/
+.center-content{
+    text-align: center;
+}
+
+.center-content h3{
+    font-size:30px;
+    font-weight: 10;
+    letter-spacing: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+    animation-name: center-h2;
+    animation-duration: 2s;
+}
+
+@keyframes center-h2 {
+    0% { opacity:0;transform: scale(0.1, 0.1); }
+    20％ { opacity:0.1;transform: scale(0.3,0.3); }
+    35％ { opacity:0.3;transform: scale(0.4, 0.4); }
+    55％ { opacity:0.35;transform: scale(0.6, 0.6); }
+    70％ { opacity:0.5;transform: scale(0.7, 0.7); }
+    75％ { opacity:0.7;transform: scale(0.8, 0.8); }
+    100％ { opacity:1.0;transform: scale(1.0, 1.0); }
+
+
+}
+
+nav {
+    display: inline-block;
+    width: 900px;
+}
+ul{
+    display:flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+nav a{
+    text-decoration: none;
+    color:white;
+    font-family:sans-serif;
+    animation-name: navigation;
+    animation-duration: 3s;
+    display: inline-block;
+}
+
+
+nav .center a {
+    animation-name: center-navigation;
+    animation-duration: 2s;
+}
+
+nav .right a {
+    animation-name: right-navigation;
+    animation-duration: 2s;
+}
+
+nav .left a {
+    animation-name: left-navigation;
+    animation-duration: 2s;
+}
+
+
+
+@keyframes center-navigation {
+    from { opacity:0; }
+    to   { opacity:1; }
+}
+
+
+@keyframes left-navigation {
+
+    from { transform: translateX(-60px); opacity:0;}
+    to   { transform: translateX(0px); opacity:1;}
+}
+
+@keyframes right-navigation {
+    from { transform: translateX(+60px); opacity:0;}
+    to   { transform: translateX(0px); opacity:1;}
+}
+
+
+/* --------------------breakfast---------------------- */
+
+#container{
+    display:flex;
+    justify-content: center;
+}
+
+.deserts{
+    width:300px;
+    height:300px;
+    margin-left:50px;
+    margin-top:200px;
+    overflow:hidden;
+}
+
+.deserts img{
+    width:300px;
+    height:300px;
+}
+
+
+.deserts h3{
+    color:chocolate;
+    text-align:center;
+    border-bottom:1px solid  black;
+}
+
+
+/* ここに.animationがないと、画面が切り替わるだけって感じ。 */
+.deserts .animation {
+    transition:transform 2s ease-in-out;
+}
+
+
+.deserts:hover .animation{
+        transform:translate(0px,-300px);
+}
+
+.animation{
+    background-color: white;
+}
+
