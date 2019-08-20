@@ -1,11 +1,13 @@
 body{
     margin:0px;
     padding:0px;
-     
 }
+
+
 .bandb {
     background: url(images/back.jpg) center center fixed no-repeat;
 }
+
 
 #back-page{
     /* background: url(images/back.jpg) center center fixed no-repeat; */
@@ -20,8 +22,8 @@ body{
     animation-name: logo;
     animation-timing-function: ease-out;
     animation-duration:2s;
-　  
 }
+
 
 @keyframes logo{
    0%{opacity: 0;transform:translateY(-200px);}
@@ -36,17 +38,20 @@ body{
     text-align: center;
 }
 
+
 .center-content h3{
     font-size:30px;
+    padding-top:3%;
     font-weight: 10;
     letter-spacing: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:white;
-    animation-name: center-h2;
+    animation-name: center-h3;
     animation-duration: 2s;
 }
 
-@keyframes center-h2 {
+
+@keyframes center-h3 {
     0% { opacity:0;transform: scale(0.1, 0.1); }
     20％ { opacity:0.1;transform: scale(0.3,0.3); }
     35％ { opacity:0.3;transform: scale(0.4, 0.4); }
@@ -54,24 +59,28 @@ body{
     70％ { opacity:0.5;transform: scale(0.7, 0.7); }
     75％ { opacity:0.7;transform: scale(0.8, 0.8); }
     100％ { opacity:1.0;transform: scale(1.0, 1.0); }
-
-
 }
 
+
 nav {
+    padding-top:25px;
     display: inline-block;
     width: 900px;
 }
+
+
 ul{
     display:flex;
     justify-content: space-between;
     padding: 0;
 }
 
+
 li{
     list-style: none;
     text-decoration: none;
 }
+
 
 nav a{
     text-decoration: none;
@@ -118,8 +127,8 @@ nav .left a {
 }
 
 
-/* --------------------breakfast---------------------- */
 
+/* --------------------breakfast---------------------- */
 #container{
     display:flex;
     justify-content: center;
