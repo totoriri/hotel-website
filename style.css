@@ -3,9 +3,12 @@ body{
     padding:0px;
      
 }
+.bandb {
+    background: url(images/back.jpg) center center fixed no-repeat;
+}
 
 #back-page{
-    background: url(images/back.jpg) center fixed no-repeat;
+    /* background: url(images/back.jpg) center center fixed no-repeat; */
     background-size: cover;
     min-height: 100vh;
 }
